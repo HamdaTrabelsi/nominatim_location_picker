@@ -1,3 +1,5 @@
+publish_to: none
+
 name: nominatim_location_picker
 description:  A map location picker for flutter with a Completely free geocoding ! Now we have MapBox Support as well
 version: 0.1.0+7
