@@ -38,7 +38,7 @@ class _MapPageState extends State<MapPage> {
                     urlTemplate:
                         'https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}.png',
                     subdomains: ['a', 'b', 'c'],
-                    tileProvider: CachedNetworkTileProvider())
+                    tileProvider: NonCachingNetworkTileProvider(),)
                 : widget.customMapLayer
             : widget.customMapLayer == null
                 ? new TileLayerOptions(
