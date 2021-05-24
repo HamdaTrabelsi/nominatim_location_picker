@@ -12,10 +12,14 @@ dependencies:
   flutter:
     sdk: flutter
   http: ^0.13.1
-  flutter_map: ^0.11.0
+  #flutter_map: ^0.11.0
   geolocator: ^5.3.1
   latlong: ^0.6.1
   auto_size_text: ^2.1.0
+  flutter_map:
+    git:
+      url: https://github.com/HamdaTrabelsi/flutter_map.git
+
 
 dev_dependencies:
   flutter_test:
