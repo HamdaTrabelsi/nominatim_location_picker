@@ -6,7 +6,7 @@ class NominatimService {
     var url =
         "https://nominatim.openstreetmap.org/search?q=${address.replaceAll(RegExp(' '), '+')}&format=json&addressdetails=1";
     print(url);
-    var response = await http.get(Uri(path: url));
+    var response = await http.get(Uri.parse(url));
     print('Response status: ${response.statusCode}');
     print('Response body: ${response.body}');
     List addresses = jsonDecode(response.body);
